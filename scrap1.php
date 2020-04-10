@@ -2,21 +2,53 @@
 include 'simple_html_dom.php';
 
 //create DOM object
-$html = file_get_html('https://www.w3schools.com/PHP/DEfaULT.asP');
-//get elements
-$list = $html->find('div[class="w3-bar w3-left"]',0);
-$list_arr = $list->find('a');
+$html = file_get_html('https://www.andrewmartin.co.uk/furniture/chairs');
+//get DOM element
+//$list = $html->find('div[class="product-listing__content__bottom"]');
+$list = $html->find('div[class="product-listing__content__bottom"]');
 
-echo "<table style='width:50%; border:1px solid grey'>";
-echo "<tr><th><td>Title</td><td>Link</td></th></tr>";
+echo "<table style='width:50%;border: 2px solid grey'>";
+echo "<thead style='background-color:grey'><tr style='text-align:center;color:white'>";
+echo "<td style='width=20%;font-size:15px'>Product name</td>";
+echo "<td style='width75%;font-size:15px'>Price</td></tr></thead>";
 
-for($i = 0; $i < sizeof($list_arr);$i++){
+
+foreach($list as $elem){
+    //echo $elem. "</br>";
     echo "<tr>";
-    echo "<td style='margin-right:2px;text-align:left;border: 1px solid black;max-width:50%'>". $list_arr[$i]->title ."</td>";
-    echo "<td style='margin-right:2px;text-align:left;border: 1px solid black;max-width:50%'>". $list_arr[$i]->href ."</td></br>";
+    echo "<td style='width=20%;font-size:10px;border: 1px solid black'><p>".$elem->children(0)."</p></td>";
+    echo "<td style='width75%;font-size:15px;border: 1px solid black'>".$elem->children(1)."</td>";
     echo "</tr>";
-    echo "</table>";
 }
+
+
+echo "</table>";
+
+
+// foreach($list as $elem){
+//     echo $elem->children(1)->children(1)->children(1)."</br>";
+// }
+
+// for($i=0;$i < sizeof($list_arr); $i++){
+//     echo $list_arr[$i]."</br>";
+// }
+
+//create DOM object
+//$html = file_get_html('https://www.w3schools.com/PHP/DEfaULT.asP');
+//get elements
+// $list = $html->find('div[class="w3-bar w3-left"]',0);
+// $list_arr = $list->find('a');
+
+// echo "<table style='width:50%; border:1px solid grey'>";
+// echo "<tr><th><td>Title</td><td>Link</td></th></tr>";
+
+// for($i = 0; $i < sizeof($list_arr);$i++){
+//     echo "<tr>";
+//     echo "<td style='margin-right:2px;text-align:left;border: 1px solid black;max-width:50%'>". $list_arr[$i]->title ."</td>";
+//     echo "<td style='margin-right:2px;text-align:left;border: 1px solid black;max-width:50%'>". $list_arr[$i]->href ."</td></br>";
+//     echo "</tr>";
+//     echo "</table>";
+// }
 
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 // get two elements inline and styling 
