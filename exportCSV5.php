@@ -15,7 +15,7 @@ $fp = fopen("php://output", "w");
 //$item->children(0);
 //$item->children(1);
 //HEADER
-fputcsv($fp,array('item Name','Price'));
+fputcsv($fp,array('Item Name','Old Price','New Price'));
 
 foreach($list as $item){
 
