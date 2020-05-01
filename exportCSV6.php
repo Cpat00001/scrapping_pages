@@ -26,9 +26,9 @@ fputcsv($fp,array('Item Name','Old Price','New Price'));
 $x = array();
 $oldprice = array();
 foreach($html->find('div[class=product-listing__content__bottom]') as $elem){
-    $x[] = $elem->children(0)->plaintext;
-    $oldprice[] = $elem->children(1)->plaintext;
-    fputcsv($fp,$x,"\n");
+    // dziala wyswietla w kolumne $x[] = $elem->children(0)->plaintext;
+    $oldprice[] = $elem->plaintext;
+    //fputcsv($fp,$x,"\n");
     fputcsv($fp,$oldprice,"\n");
 } 
 
