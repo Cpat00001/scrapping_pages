@@ -54,10 +54,13 @@ body {
   float: right;
   font-size: 25px;
 }
+/* drugi rzad */
 #drugi {
   padding: 20px;
-  margin-top: 50px;
+  margin: 50px;
   clear: both;
+  column-gap: 80px;
+  display: flex;
 }
 .dwaleft {
   min-height: 600px;
@@ -66,15 +69,17 @@ body {
   border: 1px solid white;
   position: relative;
   float: left;
-  width: 48%;
+  width: 50%;
   display: inline;
 }
 .dwaright {
-  min-height: 300px;
+  min-height: 600px;
+  height: auto;
   background-color: grey;
   border: 1px solid white;
-  float: right;
-  width: 48%;
+  position: relative;
+  float: left;
+  width: 50%;
   display: inline;
 }
 .txt1 {
@@ -99,24 +104,61 @@ body {
   float: right;
   margin-left: 10px;
 }
-
+/* trzeci rzad */
+.trzeci {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+.trzeciText {
+  text-align: center;
+  padding: 10px;
+}
+/* czwarty rzad */
+#czwarty {
+  /* column-gap: 20px;
+  display: flex; */
+  padding: 20px;
+  margin: 10px;
+  clear: both;
+  column-gap: 20px;
+  display: flex;
+}
+#czwartyBox {
+  width: 48%;
+  height: 400px;
+  background-color: pink;
+  display: inline;
+  float: left;
+  border: 1px solid red;
+  position: relative;
+}
+#czwartyBottom {
+  position: absolute;
+  height: 25%;
+  width: 100%;
+  background-color: violet;
+  top: 75%;
+  text-align: center;
+}
 /* media mobile screen @@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
   body {
     background-color: rgb(52, 58, 52);
   }
   .dwaleft {
     width: 100%;
+    float: left;
   }
   .dwaright {
     width: 100%;
   }
   .txt1 {
-    font-size: 15px;
+    font-size: 65px;
   }
   .metka {
-    height: 65px;
+    height: 130px;
     display: inline-block;
     position: absolute;
     top: 50%;
@@ -124,5 +166,28 @@ body {
     background-color: blueviolet;
     width: auto;
     padding: 10%;
+  }
+  #drugi {
+    clear: both;
+    display: block;
+    margin-left: 0px;
+    width: 100%;
+  }
+  .pole {
+    background-color: red;
+    width: 10px;
+    height: 110%;
+    float: right;
+    margin-left: 10px;
+  }
+  #czwarty {
+    clear: both;
+    display: block;
+    margin-left: 0px;
+    width: 100%;
+  }
+  #czwartyBox {
+    width: 100%;
+    float: left;
   }
 }
