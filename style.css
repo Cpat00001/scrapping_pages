@@ -66,11 +66,13 @@ body {
   min-height: 600px;
   height: auto;
   background-color: grey;
-  border: 1px solid white;
+  border: 1px solid grey;
   position: relative;
   float: left;
   width: 50%;
   display: inline;
+  background-image: url('./media/f8.jpg');
+  background-size: contain;
 }
 .dwaright {
   min-height: 600px;
@@ -81,6 +83,7 @@ body {
   float: left;
   width: 50%;
   display: inline;
+  background-image: url('./media/f10.jpg');
 }
 .txt1 {
   display: inline;
@@ -97,7 +100,14 @@ body {
   height: 130px;
   padding: 10%;
 }
-.pole {
+#pole {
+  background-color: red;
+  width: 10px;
+  height: 110%;
+  float: right;
+  margin-left: 10px;
+}
+#pole1 {
   background-color: red;
   width: 10px;
   height: 110%;
@@ -132,8 +142,28 @@ body {
   float: left;
   border: 1px solid red;
   position: relative;
+  background-image: url('./media/f11.jpg');
 }
 #czwartyBottom {
+  position: absolute;
+  height: 25%;
+  width: 100%;
+  background-color: violet;
+  top: 75%;
+  text-align: center;
+}
+/* czwartyBox1 - z prawej strony */
+#czwartyBox1 {
+  width: 48%;
+  height: 400px;
+  background-color: pink;
+  display: inline;
+  float: left;
+  border: 1px solid red;
+  position: relative;
+  background-image: url('./media/f5.jpg');
+}
+#czwartyBottom1 {
   position: absolute;
   height: 25%;
   width: 100%;
