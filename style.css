@@ -185,12 +185,14 @@ body {
 }
 /* now css 07.09 */
 #piaty {
-  /*background-image: url('./media/f3.jpg');
+  background-image: url('./media/f3.jpg');
   background-repeat: no-repeat;
-  background-size: 100%;*/
+  background-size: 100%;
   background-color: rgb(48, 44, 44);
   width: 100%;
   min-height: 500px;
+  background-size: cover;
+  /* background-attachment: fixed; */
   margin-top: 1%;
   margin-right: -20px;
   position: relative;
@@ -225,6 +227,46 @@ body {
   color: white;
   font-size: 45px;
   font-weight: 900;
+}
+#szosty {
+  background-color: #0081c5 !important;
+  color: white;
+  height: 200px;
+  position: relative;
+  text-align: center;
+}
+#newsletter {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: #0081c5 !important;
+  color: white;
+  font-size: 20px;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+  font-size: 20px;
+  padding: 10px;
+}
+#newsLeft {
+  float: left;
+  width: 70%;
+  margin-left: 5%;
+}
+#submitButt {
+  height: 50px;
+  width: 20%;
+  background-color: white;
+  color: blue;
+  float: left;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 900;
+  margin-left: 20px;
+  border: 1px solid white;
 }
 /* media mobile screen @@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
@@ -289,5 +331,37 @@ body {
     color: white;
     font-size: 25px;
     font-weight: 900;
+  }
+  #szosty {
+    background-color: #0081c5 !important;
+    color: white;
+    height: 200px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    float: left;
+  }
+  #newsletter {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: #0081c5 !important;
+    color: white;
+    font-size: 20px;
+    clear: both;
+    float: left;
+  }
+  #submitButt {
+    height: 50px;
+    width: 50%;
+    background-color: white;
+    color: blue;
+    float: left;
+    font-size: 15px;
+    font-weight: 900;
+    margin-left: 20px;
+    margin-top: 10px;
+    border: 1px solid white;
   }
 }
