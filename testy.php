@@ -117,6 +117,101 @@
     // $c = isset($a) ? 'submitted value: ' . $a : 'you need to pass a velue not empty field';
     // echo $c;
 
+    // in_array()
+    // $a = array('mac', 'apple', 'windows', 'debian');
+    // $b = 'apple';
+
+    // function test($b, $a)
+    // {
+    //     if (in_array($b, $a)) {
+    //         echo "<h1>Exists</h1>";
+    //     } else {
+    //         echo "doesnt exist";
+    //     }
+    // }
+    // test($b, $a);
+
+    //########################## is_string()
+    // $values = array(false, true, null, 'abc', '23', 23, 23.5, '');
+    // foreach ($values as $value) {
+    //     echo "is_string( ";
+    //     var_export($value);
+    //     echo ") = ";
+    //     echo var_dump(is_string($value)) . "</br>";
+    // }
+    //######################## function_exists()
+    // function example()
+    // {
+    //     return true;
+    // }
+    // $word = "Exists";
+
+    // function checkOther($w)
+    // {
+    //     if (function_exists('example')) {
+    //         echo "sample function $w";
+    //     }
+    // }
+    // checkOther($word);
+    // ########### defined();
+    // $def = 'defined';
+    // define('HALO', "some random text here");
+    // $txt = 'given CONSTANT IS SET';
+    // $txt2 = 'VARIABLE is set and value is: ';
+
+    // function test()
+    // {
+    //     if (defined('HALO')) {
+    //         echo $txt;
+    //     } else {
+    //         echo 'not defined';
+    //     }
+    //     if (isset($def)) {
+    //         echo $txt2 . ' ' . $def;
+    //     }
+    // }
+    // test();
+
+    //########## sprintf()
+    // $num = 5;
+    // $place = 'tree';
+    // $format = 'there are %d monkeys in the %s ';
+    // echo sprintf($format, $num, $place);
+    // echo "</br>";
+    // $format2 = 'the %2$s contains %1$d monkeys';
+    // echo sprintf($format2, $num, $place);
+    // echo "</br>";
+    // $format3 = 'the %2$.4s contains %1$05d monkeys';
+    // echo sprintf($format3, $num, $place);
+
+    // ############## usleep() + sleep()
+    // echo date("h:i:s") . "\n";
+    // //usleep(2000000);
+    // sleep(3);
+    // echo "</br>";
+    // echo "Three second later...</br>";
+    // echo date('h:i:s');
+
+    //############ microtime()
+    // echo microtime();
+    echo "</br>";
+
+    function micro_float()
+    {
+        list($a, $b) = explode(" ", microtime());
+        return ((float)$a + (float)$b);
+    }
+    $start = micro_float();
+
+    //sleep for a moment
+    sleep(2);
+
+    $end = micro_float();
+    $work = $end - $start;
+    echo "done during period of time: " . $work;
+
+
+
 
 
 
