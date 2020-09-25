@@ -194,21 +194,40 @@
 
     //############ microtime()
     // echo microtime();
-    echo "</br>";
+    // echo "</br>";
 
-    function micro_float()
+    // function micro_float()
+    // {
+    //     list($a, $b) = explode(" ", microtime());
+    //     return ((float)$a + (float)$b);
+    // }
+    // $start = micro_float();
+
+    // //sleep for a moment
+    // sleep(2);
+
+    // $end = micro_float();
+    // $work = $end - $start;
+    // echo "done during period of time: " . $work;
+
+    // is_object()
+    function check_object($obiekt)
     {
-        list($a, $b) = explode(" ", microtime());
-        return ((float)$a + (float)$b);
-    }
-    $start = micro_float();
+        if (!is_object($obiekt)) {
+            echo "NOT an Object";
+            return false;
+        }
+        return $obiekt->students;
+    };
 
-    //sleep for a moment
-    sleep(2);
+    $obiekt = new stdClass();
+    $obiekt->students = array('Tomek', 'Romek', 'Kasia');
 
-    $end = micro_float();
-    $work = $end - $start;
-    echo "done during period of time: " . $work;
+    var_dump(check_object($obiekt));
+    $dwa = var_dump(check_object($obiekt[1]));
+    echo $dwa;
+
+
 
 
 
