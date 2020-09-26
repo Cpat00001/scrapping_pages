@@ -211,21 +211,41 @@
     // echo "done during period of time: " . $work;
 
     // is_object()
-    function check_object($obiekt)
+    // function check_object($obiekt)
+    // {
+    //     if (!is_object($obiekt)) {
+    //         echo "NOT an Object";
+    //         return false;
+    //     }
+    //     return $obiekt->students;
+    // };
+
+    // $obiekt = new stdClass();
+    // $obiekt->students = array('Tomek', 'Romek', 'Kasia');
+
+    // var_dump(check_object($obiekt));
+
+    //in_array()
+
+
+    $name = "Marian";
+
+    function check_existance($name)
     {
-        if (!is_object($obiekt)) {
-            echo "NOT an Object";
-            return false;
+        $os = array('Julek', 'Marian', 'Toeofil');
+
+        if (in_array($name, $os)) {
+            echo "yes";
+        } else {
+            echo "no";
         }
-        return $obiekt->students;
-    };
+    }
+    check_existance($name);
 
-    $obiekt = new stdClass();
-    $obiekt->students = array('Tomek', 'Romek', 'Kasia');
 
-    var_dump(check_object($obiekt));
-    $dwa = var_dump(check_object($obiekt[1]));
-    echo $dwa;
+
+
+
 
 
 
