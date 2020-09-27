@@ -228,19 +228,71 @@
     //in_array()
 
 
-    $name = "Marian";
+    // $name = "Marian";
 
-    function check_existance($name)
+    // function check_existance($name)
+    // {
+    //     $os = array('Julek', 'Marian', 'Toeofil');
+
+    //     if (in_array($name, $os)) {
+    //         echo "yes";
+    //     } else {
+    //         echo "no";
+    //     }
+    // }
+    // check_existance($name);
+
+    // printf()
+
+    // $txt = 'wydruk';
+    // printf("%s\n", $txt);
+    // echo "<br/>";
+    // printf("|%20s|\n", $txt);
+
+    // gmdate()
+    //echo gmdate("M d Y H:i:s", mktime(0, 0, 0, 1, 1, 1998));
+
+    // file_exists()
+    // $file = './indexaaaaaaaaaaaa.php';
+
+    // if (file_exists($file)) {
+    //     echo "OK file exists";
+    //     require_once('index.php');
+    // } else {
+    //     echo "Theres no such file </br>";
+    //     require('OOP_refresher.php');
+    // }
+    //dirname()
+
+    // $path = './onelevel/secondlevel/OOP_refresher.php';
+    // echo dirname($path, 1);
+    // echo dirname("/etc/passwd", 1);
+
+    //getcwd()
+    //echo "get current working directory: " . getcwd();
+    //_DIR_ .
+    //require _DIR_ . '/index.php';
+
+    // strpos()
+    $slowo = 'abc';
+    $find = 'a';
+    $position = strpos($slowo, $find);
+
+    function lookfor()
     {
-        $os = array('Julek', 'Marian', 'Toeofil');
+        global $slowo, $find, $position;
 
-        if (in_array($name, $os)) {
-            echo "yes";
+        if ($position !== false) {
+            echo "the string ' " . $find . " ' exists in a string " . $slowo . " and his position is " . $position;
         } else {
-            echo "no";
+            echo "substring ' " . $find . " ' havent been found in " . $slowo;
         }
     }
-    check_existance($name);
+    lookfor();
+
+
+
+
 
 
 
