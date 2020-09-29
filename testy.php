@@ -327,12 +327,26 @@
 
     // change($phrase, $healthy, $junk);
 
-    // ob_start()
-    ob_start();
-    echo 'Text that won\'t get displayed.';
+    // ob_start() + ob_end_clean()
+    // ob_start();
+    // $dirty = "eat pizza and drink coca-cola";
+    // echo $dirty;
+    // ob_end_clean();
 
-    //ob_end_clean();
+    //trim()
+    // $exampl = "  just random text  to trim              +++ tak to";
+    // $text   = "\t\tThese are a few words :) ...  t t \t";
+    // var_dump($text, "\t");
 
+    // $hello  = "Hello World";
+    // var_dump($hello, 'HdWr');
+    //parse_url();
+
+    $url = 'http://username:password@hostname:9090/path?arg=value#anchor';
+    echo $url . "</br>";
+    var_dump(parse_url($url));
+    echo "</br>";
+    var_dump(parse_url($url, PHP_URL_QUERY));
 
 
 
