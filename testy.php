@@ -274,21 +274,66 @@
     //require _DIR_ . '/index.php';
 
     // strpos()
-    $slowo = 'abc';
-    $find = 'a';
-    $position = strpos($slowo, $find);
+    // $slowo = 'abc';
+    // $find = 'a';
+    // $position = strpos($slowo, $find);
 
-    function lookfor()
-    {
-        global $slowo, $find, $position;
+    // function lookfor()
+    // {
+    //     global $slowo, $find, $position;
 
-        if ($position !== false) {
-            echo "the string ' " . $find . " ' exists in a string " . $slowo . " and his position is " . $position;
-        } else {
-            echo "substring ' " . $find . " ' havent been found in " . $slowo;
-        }
-    }
-    lookfor();
+    //     if ($position !== false) {
+    //         echo "the string ' " . $find . " ' exists in a string " . $slowo . " and his position is " . $position;
+    //     } else {
+    //         echo "substring ' " . $find . " ' havent been found in " . $slowo;
+    //     }
+    // }
+    // lookfor();
+
+    // strtolower()
+
+    // $str = "Hello Kitty";
+    // $str = 'HELLO MATE';
+
+    // function goLower($x)
+    // {
+
+    //     $y = strtolower($x);
+    //     echo $y;
+    // }
+    // goLower($str);
+
+    //str_replace()
+    // $vowels = array("a", "e", "o");
+    // $replaced = str_replace($vowels, "", "kot bedzie mialczal");
+    // echo $replaced;
+    // $replaced = str_replace($junk, $healthy, $phrase);
+
+
+    // function change($phrase, $healthy, $junk)
+    // {
+    //     if (isset($phrase)) {
+    //         echo 'works </br>';
+    //         $replaced = str_replace($junk, $healthy, $phrase);
+    //         unset($GLOBALS['phrase']);
+    //         echo $replaced;
+    //     }
+    // }
+
+    // $phrase = "eat pizza and drink coca-cola";
+    // $healthy = array("fruits", "fresh drinks");
+    // $junk = array("pizza", "coca-cola");
+
+
+    // change($phrase, $healthy, $junk);
+
+    // ob_start()
+    ob_start();
+    echo 'Text that won\'t get displayed.';
+
+    //ob_end_clean();
+
+
 
 
 
