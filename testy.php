@@ -9,6 +9,20 @@
 
 <body>
     <?php
+    //setcookie()
+    // $c = 'keep me in a browser';
+    // setcookie('exampleCookie', $c);
+    // $id_num = '1234';
+    // $id_name = 'ID';
+    // setcookie($id_name, $id_num);
+
+
+    // //get cookie value and do something
+    // if (isset($_COOKIE[$id_name])) {
+    //     echo 'cookie set and value is: ' . $id_num;
+    // }
+
+
     // $x = array('brown', 'coffee', 'caffeine');
     // list($color, $drink, $moc) = $x;
     // echo "$drink ma color $color is zawiera $moc <br> ";
@@ -342,11 +356,45 @@
     // var_dump($hello, 'HdWr');
     //parse_url();
 
-    $url = 'http://username:password@hostname:9090/path?arg=value#anchor';
-    echo $url . "</br>";
-    var_dump(parse_url($url));
-    echo "</br>";
-    var_dump(parse_url($url, PHP_URL_QUERY));
+    // $url = 'http://username:password@hostname:9090/path?arg=value#anchor';
+    // echo $url . "</br>";
+    // var_dump(parse_url($url));
+    // echo "</br>";
+    // var_dump(parse_url($url, PHP_URL_QUERY));
+
+    // switch()
+
+    // $i = 3;
+
+    // switch ($i) {
+    //     case 0:
+    //         echo "i is equal to 0";
+    //         break;
+    //     case 1:
+    //         echo "i is equal to 1";
+    //         break;
+    //     case 2:
+    //         echo "i is equal to 2";
+    //         break;
+    //     default:
+    //         echo 'please choose any number from 0 to 2';
+    // }
+    // echo "</br>";
+    // $i = 'ogorek';
+
+    // switch ($i) {
+    //     case 'apple':
+    //         echo 'you have chosen apple';
+    //     case 'banana':
+    //         echo 'you have chosen banana';
+    //     case 'carrot':
+    //     case 'onion':
+    //     case 'horseraddish':
+    //         echo 'you have chosen vegetable';
+    //     default:
+    //         echo 'sorry we dont sell this item';
+    // }
+
 
 
 
