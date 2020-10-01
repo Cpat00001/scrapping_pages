@@ -394,6 +394,76 @@
     //     default:
     //         echo 'sorry we dont sell this item';
     // }
+    // foreach()
+
+    // $a = array(1, 2, 3, 4);
+
+    // foreach ($a as $val) {
+    //     $val = $val * 2;
+    //     echo $val . "</br>";
+    // }
+    // foreach ($a as $key => $value) {
+    //     echo "{$key} => {$value}";
+    // }
+    // foreach ($a as $key => $val) {
+    //     $val = $val * 2;
+    //     echo "{$key} => {$val} </br>";
+    // }
+
+    // $a = array('one' => 1, 'two' => 2, 'three' => 3);
+
+    // foreach ($a as $key => $value) {
+    //     echo "{$key} => {$value} </br>";
+    // }
+    //multidimentional array
+    // $y = array();
+
+    // $y[0][0] = 'a';
+    // $y[0][1] = 'b';
+    // $y[0][2] = 'c';
+
+    // foreach ($y as $v1) {
+    //     foreach ($v1 as $v2) {
+    //         echo "v2 value: " . $v2 . " </br>";
+    //     }
+    // }
+    // $cars = array(
+    //     array('volvo', 'new', 'expensive'),
+    //     array('citroen', 'used', 'cheap'),
+    //     array('ford', 'used', 'expensive')
+    // );
+
+    // foreach ($cars as $a) {
+    //     print_r(array_values($a));
+    //     echo "</br>";
+    // }
+    // foreach ($cars as $c) {
+    //     echo '_________</br>';
+    //     echo "Another car: </br>";
+    //     foreach ($c as $i) {
+    //         echo $i . "</br>";
+    //     }
+    // };
+    $food = array(
+        'fruits' => array('orange', 'banana', 'apple'),
+        'veggie' => array('carrot', 'collard', 'pea'),
+        //'meat' => array('pork', 'lamb', 'chicken', 'turkey' => array(['sizes'] => 'big', 'small'))
+        'meat' => array('pork', 'lamb', 'chicken', 'turkey')
+
+    );
+
+    foreach ($food as $key => $name) {
+        echo '_______' . $key . "______</br>";
+        foreach ($name as $oo) {
+            echo $oo . "</br>";
+
+            // $sizes = array();
+            // foreach ($oo["sizes"] as $size) {
+            //     echo $size;
+            // }
+        }
+    }
+
 
 
 
