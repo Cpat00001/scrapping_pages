@@ -444,25 +444,83 @@
     //         echo $i . "</br>";
     //     }
     // };
-    $food = array(
-        'fruits' => array('orange', 'banana', 'apple'),
-        'veggie' => array('carrot', 'collard', 'pea'),
-        //'meat' => array('pork', 'lamb', 'chicken', 'turkey' => array(['sizes'] => 'big', 'small'))
-        'meat' => array('pork', 'lamb', 'chicken', 'turkey')
+    // $food = array(
+    //     'fruits' => array('orange', 'banana', 'apple'),
+    //     'veggie' => array('carrot', 'collard', 'pea'),
+    //     //'meat' => array('pork', 'lamb', 'chicken', 'turkey' => array(['sizes'] => 'big', 'small'))
+    //     'meat' => array('pork', 'lamb', 'chicken', 'turkey')
 
-    );
+    // );
 
-    foreach ($food as $key => $name) {
-        echo '_______' . $key . "______</br>";
-        foreach ($name as $oo) {
-            echo $oo . "</br>";
+    // foreach ($food as $key => $name) {
+    //     echo '_______' . $key . "______</br>";
+    //     foreach ($name as $oo) {
+    //         echo $oo . "</br>";
 
-            // $sizes = array();
-            // foreach ($oo["sizes"] as $size) {
-            //     echo $size;
-            // }
-        }
-    }
+    //         // $sizes = array();
+    //         // foreach ($oo["sizes"] as $size) {
+    //         //     echo $size;
+    //         // }
+    //     }
+    // }
+
+    // current()
+
+    // $transport = array('one', 'two', 'three', 'four');
+
+    // $mode = current($transport);
+    // //echo $mode;
+    // $mode2 = next($transport);
+    // echo $mode2 . "</br>";
+    // $mode3 = current($transport);
+    // echo $mode3 . "</br>";
+    // $mode4 = next($transport);
+    // echo $mode4 . "</br>";
+    // $mode5 = current($transport);
+    // echo $mode5 . "</br>";
+    // $mode6 = prev($transport);
+    // echo $mode6;
+
+    // ternary operator
+    // $condition = 'abc';
+
+    // $result = $condition ? 'condition is set' : 'condition NOT set';
+    // echo $result;
+
+    //null coalescing operator
+    // $data = 'my name';
+    // $wynik = isset($data) ? 'data set' : 'nobody';
+    // echo $wynik;
+    // $data = 'User 1';
+
+    // $wynik2 = $data ?? 'nobody';
+    // echo $wynik2;
+    //chainign coalescing operator
+    //$f = 'one';
+    //$t = 'two';
+    // $th = 'three';
+
+    // $result = $f ?? $t ?? $th ?? 'not value SET';
+    // echo $result;
+
+    //preg_replace()
+
+    $string = 'The quick brown fox jumps over the lazy dog.';
+
+    $patterns = array();
+    $patterns[0] = '/quick/';
+    $patterns[1] = '/brown/';
+    $patterns[2] = '/fox/';
+    $replacements = array();
+    $replacements[0] = 'slow';
+    $replacements[1] = 'grey';
+    $replacements[2] = 'bear';
+
+    $result = preg_replace($patterns, $replacements, $string);
+    echo $result;
+
+
+
 
 
 
