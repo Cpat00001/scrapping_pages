@@ -505,19 +505,61 @@
 
     //preg_replace()
 
-    $string = 'The quick brown fox jumps over the lazy dog.';
+    // $string = 'The quick brown fox jumps over the lazy dog.';
 
-    $patterns = array();
-    $patterns[0] = '/quick/';
-    $patterns[1] = '/brown/';
-    $patterns[2] = '/fox/';
-    $replacements = array();
-    $replacements[0] = 'slow';
-    $replacements[1] = 'grey';
-    $replacements[2] = 'bear';
+    // $patterns = array();
+    // $patterns[0] = '/quick/';
+    // $patterns[1] = '/brown/';
+    // $patterns[2] = '/fox/';
+    // $replacements = array();
+    // $replacements[0] = 'slow';
+    // $replacements[1] = 'grey';
+    // $replacements[2] = 'bear';
 
-    $result = preg_replace($patterns, $replacements, $string);
-    echo $result;
+    // $result = preg_replace($patterns, $replacements, $string);
+    // echo $result;
+
+    //$i = 1;
+
+    // while ($i < 5) {
+    //     echo 'the i value is: ' . $i++ . "</br>";
+    // }
+    // while ($i <= 5) :
+    //     echo '<b>the i value is:</b> ' . $i . "</br>";
+    //     $i++;
+    // endwhile;
+
+    //array_intersec()
+    // $array1 = array("a" => "green", "red", "blue");
+    // $array2 = array("b" => "green", "yellow", "red");
+    // $array1 = array("green", "red", "blue", "pink");
+    // $array2 = array("green", "yellow", "red", "pink");
+
+    // $result = array_intersect($array1, $array2);
+    // print_r($result);
+
+    //array_keys();
+    // $arr1 = array(0 => 100, "color" => "red");
+    // $arr1 = array('1' => 'red', '2' => 'pink', '3' => 'green', '4' => 'black');
+    // $arr2 = array('one' => 'one', 'two' => 'two', 'three' => 'three');
+    //print_r(array_keys($arr1));
+    //print_r(array_keys($arr2));
+    //print_r(array_keys($arr1, 'pink'));
+
+    // $a = array("color" => array('pink', 'red', 'blue'), "size" => array('small', 'medium', 'big'));
+    // print_r($a);
+
+    //stripcslashes()
+
+    // $s = '\ abc';
+    //$s2 = '\ abc\def';
+    //echo stripcslashes($s2);
+
+
+
+
+
+
 
 
 
