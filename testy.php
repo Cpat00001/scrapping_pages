@@ -555,6 +555,38 @@
     //$s2 = '\ abc\def';
     //echo stripcslashes($s2);
 
+    //alternative syntax for control structures
+    // $a = '5';
+    // if($a === 5): 
+    //     echo 'A is equal to 5';
+    // else: 
+    //     echo "A is not equal to 5";
+    // endif
+
+    // $a = 2;
+
+    // if($a == 5):
+    //     echo "A is 5";
+    // elseif($a == 4):
+    //     echo "A is 4";
+    // else: 
+    //     echo "A is NOT 5 nor 4";
+    // endif;
+
+    //for loop
+    // for($i = 1 ; $i <=5 ; $i++){
+    //     echo $i ." <br>";
+    // }
+    for($i = 1; ; $i++){
+        if($i = 5){
+            echo "$i is 5 and do Break";
+        break;
+        }
+        echo $i . "</br>";
+        
+    }
+
+
 
 
 
