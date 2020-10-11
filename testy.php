@@ -577,18 +577,51 @@
     // for($i = 1 ; $i <=5 ; $i++){
     //     echo $i ." <br>";
     // }
-    for($i = 1; ; $i++){
-        if($i = 5){
-            echo "$i is 5 and do Break";
-        break;
-        }
-        echo $i . "</br>";
+    // for($i = 1; ; $i++){
+    //     if($i = 5){
+    //         echo "$i is 5 and do Break";
+    //     break;
+    //     }
+    //     echo $i . "</br>";
         
-    }
+    // }
 
+// isset()
+// $t = 'random text';
+// if(isset($t)){
+//     echo " t value is set and equal to <h2>" . $t . "</h2>";
+// }else{
+//     echo "t is NOT set";
+// }
+// $a = NULL;
+// var_dump(isset($a));
 
+// $a = array("one"=>'red',"two"=>'green');
+// if(isset($a)){
+//     //print_r(array_keys($a));
+//     if(array_key_exists('one',$a)){
+//         //var_dump($a['one']);
+//         $b = $a['one'];
+//         // echo $b;
+//         if($b == 'red'){
+//             echo 'Wait for a GREEN LIGHT';
+//         }else{
+//             echo "Green Light => you can go now";
+//         }
+//     }
+// }
 
+//in_array()
+$a = array('one','two','three');
+$b = $a[1];
 
+if(in_array($b,$a)){
+    echo "value exists in_array";
+}else{
+    echo "does NOT exists in array";
+}
+
+// preg_match()
 
 
 
