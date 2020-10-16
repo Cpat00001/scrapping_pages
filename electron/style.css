@@ -4,3 +4,12 @@ Author:Pat
 Description: Simple page Electron
 Version: 1.0.0
 */
+body {
+  padding: 0;
+  margin: 0;
+}
+.strong-view.wpmtst-modern .wpmtst-testimonial-content:before,
+.strong-view.wpmtst-modern .wpmtst-testimonial-content:after {
+  background: #eeea0a !important;
+  color: #eeea0a !important;
+}
