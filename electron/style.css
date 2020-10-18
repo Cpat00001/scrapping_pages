@@ -13,3 +13,32 @@ body {
   background: #eeea0a !important;
   color: #eeea0a !important;
 }
+/* styling posts' elements*/
+.homepage-services{
+  position:relative;
+  min-height:275px;
+  text-align:center;
+  color:pink;
+}
+.homepage-services .content{
+  position:relative;
+  top: -50px;
+}
+.homepage-services .icon{
+  background: #6264C5 !important;
+  fill:red;
+  color:white;
+  font-size:33px;
+  padding: .7em;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  width: 90px;
+}
+.practice-area-box{
+  background-color:purple;
+  padding:25px;
+  margin:15px;
+  width:100%;
+}
+
