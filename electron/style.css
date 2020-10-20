@@ -54,3 +54,8 @@ body {
   text-decoration: none;
   color: #222528;
 }
+
+/* menu */
+.elementor-widget-navigation-menu a.hfe-menu-item {
+  font-size: 20px;
+}
