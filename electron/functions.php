@@ -1,12 +1,5 @@
 <?php
 
-// menu position
-    wp_nav_menu( array(
-        'theme_location' => 'primary',
-        'menu_class'     => 'primary-menu',
-         ) );
-
-
 function register_nav(){
     register_nav_menus(
         array(
@@ -47,3 +40,6 @@ add_action('wp_enqueue_scripts','scripts_header');
 
 /* Call shortcodes */
 require_once('shortcodes/electron_news.php');
+// Call file team.php
+require_once('shortcodes/team.php');
+
