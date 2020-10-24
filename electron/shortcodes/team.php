@@ -16,8 +16,13 @@ function team(){
         $thumbnail = get_the_post_thumbnail_url(get_the_ID(),'team');
         $str .= '
             <div class="elementor-column elementor-col-33 elementor-top-column elementor-element" data-element-type="column">
+            <div class="image-wrapper">
+            <a href="'.get_the_permalink().'" title="'.get_the_title().'">
+                <img src="'.do_shortcode('[acf field="image"]').'" alt="'.get_the_title().'">
+            </a> 
+            
             <div class="team-member-info">
-                <h2><a href="'.get_the_permalink().'">'.get_the_title().'</a>  </h2>
+                <h2><a href="'.get_the_permalink().'">'.get_the_title().'</a></h2>
                 <h3>'.do_shortcode('[acf field="title"]').'</h3>
                 <div>
                     <a href="mailto:'.do_shortcode('[acf field="email_address"]').'
@@ -27,12 +32,15 @@ function team(){
                     <a href="tel:'.do_shortcode('[acf field="phone_number"]').'
                     " title="Call'.get_the_title().'">'.do_shortcode('[acf field="phone_number"]').'</a>            
                 </div>
+            </div>
+
+
             </div>             
             </div>
         ';
         if($i % 3 == 0):
             $str .= '</div>'; 
-            $str .='<div class="elementor-row">';
+            $str .='<div class="elementor-row staff">';
         endif;
         $i++;
     endwhile;

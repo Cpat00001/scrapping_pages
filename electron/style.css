@@ -41,14 +41,17 @@ body {
   margin: 15px;
   width: 100%;
 }
-.single-practice-areas .content .elementor-column-wrap {
+.single-practice-areas .content .elementor-column-wrap,
+.single-team .content .elementor-column-wrap {
   padding: 50px;
   background-color: rgb(197, 166, 171);
 }
-.single-practice-areas .content h1 {
+.single-practice-areas .content h1,
+.single-team .content h1 {
   padding: 10px;
   color: #6264c5;
   font-size: 35px;
+  margin-bottom: 20px;
 }
 .single-practice-areas .content a {
   text-decoration: none;
@@ -58,4 +61,77 @@ body {
 /* menu */
 .elementor-widget-navigation-menu a.hfe-menu-item {
   font-size: 20px;
+}
+.staff .image-wrapper {
+  background-color: grey;
+  clear: both;
+  margin: 10px;
+}
+.staff .image-wrapper img {
+  width: 100%;
+  height: 80%;
+  transition: opacity 0.4;
+}
+.staff image-wrapper a:hover > img {
+  opacity: 0.9;
+}
+.staff .team-member-info {
+  background-color: pink;
+}
+.staff .team-member-info h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+.staff .team-member-info h2 a {
+  color: #333;
+}
+.staff .team-member-info h3 {
+  margin: 0;
+  color: rgba(0, 0, 0.5);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border-bottom: 1px solid rgba(0, 0, 0.3);
+  margin-bottom: 5px;
+}
+
+/* single-team.php styling */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.text.center {
+  text-align: center;
+}
+.single-member {
+}
+.single_team_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+.member_form_request {
+  background-color: rgb(48, 101, 180);
+  padding: 20px;
+}
+.team_icon {
+  margin: 10px;
+  color: red;
+}
+.elementor-widget-wrap a {
+  text-decoration: none;
+}
+
+/* media query => styling smaller devices */
+@media only screen and (max-width: 600px) {
+  .staff .team-member-info {
+    background-color: greenyellow;
+  }
+  .staff .image-wrapper {
+    margin-bottom: 50px;
+  }
+  .hfe-menu-item {
+    color: grey;
+  }
 }
