@@ -12,11 +12,16 @@
 
 <header id="header">
         <div class="container">
-        <div class="row">
-            <img src="<?php bloginfo('template_directory');?>/images/logo.svg" alt="WooCommLogo" id="logo">
+        <div class="row d-flex justify-content-between" style="width:100%;">
+            <div class="col-sm-3">
+              <img src="<?php bloginfo('template_directory');?>/images/logo.svg" alt="WooCommLogo" id="logo">
+            </div>
+            <div class="col-sm-9">
             <?php wp_nav_menu(array(
-                'theme_location' => 'Top_menu'
+                'theme_location' => 'Top_menu',
             )) ?>
+            </div>
+            
         </div>
         </div>
 </header>
@@ -31,7 +36,7 @@
     <button type="button" class="btn btn-primary" id="btnOne" onclick="popup()">Get more</button>
     </div>
     <div class="col-sm">
-    <p id="demo">Some details about collection...</p>
+    <p id="demo">Some details about new cars...</p>
     </div>
   </div>
 </div>
