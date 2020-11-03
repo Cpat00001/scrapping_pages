@@ -45,9 +45,9 @@ a:hover {
 /* front-page */
 #hero {
   height: auto;
-  min-height: 500px;
+  min-height: 300px;
   width: 100%;
-  color: white;
+  color: black;
   background-image: url('./images/hero.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
@@ -55,6 +55,7 @@ a:hover {
 .content {
   height: auto;
   background-color: indianred;
+  margin-top: 5px;
 }
 
 /* page.php */
@@ -67,4 +68,17 @@ a:hover {
   height: 300px;
   width: 100%;
   background-color: grey;
+}
+
+@media only screen and (min-width: 640px) {
+  #hero {
+    min-height: 500px;
+    height: auto;
+    color: white;
+  }
+}
+/* post page/single post imgs */
+#res {
+  width: 900px;
+  height: 600px;
 }

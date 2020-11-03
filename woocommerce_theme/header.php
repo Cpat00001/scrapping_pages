@@ -14,7 +14,9 @@
         <div class="container">
         <div class="row d-flex justify-content-between" style="width:100%;">
             <div class="col-sm-3">
-              <img src="<?php bloginfo('template_directory');?>/images/logo.svg" alt="WooCommLogo" id="logo">
+              <a href="<?php bloginfo('url'); ?>">
+                <img src="<?php bloginfo('template_directory');?>/images/logo.svg" alt="WooCommLogo" id="logo">
+              </a>
             </div>
             <div class="col-sm-9">
             <?php wp_nav_menu(array(

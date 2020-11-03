@@ -22,3 +22,21 @@ register_nav_menus(
         'top-menu' => __('Top Menu','theme')
     )
 );
+// add featured image to CMS single-page as thumbnail
+add_theme_support('post-thumbnails');
+
+// set image size in single-page
+add_image_size('post_image_size',900,600,false);
+
+// create a widget in CMS sidebar
+register_sidebar(
+    array(
+        'name' => 'Page Sidebar',
+        'id' => 'page-sidebar',
+        'class' => '',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'
+
+    )
+);
+
