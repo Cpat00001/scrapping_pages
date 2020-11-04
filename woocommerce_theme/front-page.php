@@ -10,7 +10,7 @@
     <div class="container">
             <?php
             if(have_posts()):
-
+                
                 while(have_posts()):
                     echo '<h5>'.the_title().'</h5>';
                     the_post();

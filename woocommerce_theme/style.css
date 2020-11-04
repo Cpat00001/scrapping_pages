@@ -3,7 +3,7 @@ Theme Name: WooCommerce_Two
 Author: Pat
 */
 body {
-  background-color: powderblue;
+  background-color: white;
 }
 /* header front-page */
 #header {
@@ -81,4 +81,20 @@ a:hover {
 #res {
   width: 900px;
   height: 600px;
+}
+.widget_pages {
+  background-color: rgb(170, 153, 156);
+  box-shadow: 5px 5px 20px rgb(182, 121, 182);
+  padding: 10px;
+}
+
+/* WooCommerce */
+.woocommerce-input-wrapper {
+  width: 100%;
+  display: block;
+}
+.woocommerce form .form-row input.input-text,
+.woocommerce form .form-row textarea {
+  padding: 10px;
+  background-color: rgb(202, 164, 176);
 }
