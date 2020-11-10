@@ -1,0 +1,14 @@
+/*
+Theme Name: woo_comm_three
+Author:Logiston
+Theme URI: https://wordpress.org/themes/woo_comm_three/
+*/
+
+.custom_klasa {
+  background-color: rgb(189, 103, 150);
+}
+
+/* footer styling */
+.footer {
+  color: rgb(224, 240, 11);
+}
