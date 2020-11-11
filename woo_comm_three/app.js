@@ -1,1 +1,1 @@
-alert('Welcom to Scandinavian');
+// alert('Welcom to Scandinavian');
