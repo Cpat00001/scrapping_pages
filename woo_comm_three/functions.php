@@ -12,5 +12,13 @@ function add_javascript(){
     wp_enqueue_script('custom_javascript');
 }
 add_action('wp_enqueue_scripts','add_javascript');
+
+// add menu
+add_theme_support('menus');
+
+register_nav_menus(array(
+        'top-menu' => 'Top Menu',
+    ));
+
 ?>
 
