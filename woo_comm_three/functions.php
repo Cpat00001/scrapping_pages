@@ -19,6 +19,10 @@ add_theme_support('menus');
 register_nav_menus(array(
         'top-menu' => 'Top Menu',
     ));
+//  add thumbnail for a post
+add_theme_support('post-thumbnails');
+// add image size/thumbnails
+add_image_size('custom-size', 1100, 550, false);
 
 ?>
 

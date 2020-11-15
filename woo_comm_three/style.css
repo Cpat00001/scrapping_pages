@@ -5,7 +5,7 @@ Theme URI: https://wordpress.org/themes/woo_comm_three/
 */
 
 .custom_klasa {
-  background-color: rgb(137, 183, 221);
+  background-color: rgb(161, 179, 194);
 }
 /* Header */
 .header {
@@ -47,9 +47,57 @@ a:hover {
   height: 500px;
   width: 100%;
   background-color: rgb(161, 149, 149);
+  background-image: url('./images/p1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#c1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  padding: 20px;
+  color: white;
+}
+.content {
+  min-height: auto;
+  padding: 40px 10px;
+  background-color: pink;
 }
 
 /* footer styling */
-.footer {
-  color: rgb(224, 240, 11);
+#footerrow {
+  background-color: rgb(175, 147, 175);
+  color: white;
+  min-height: 200px;
+  text-align: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+/* about us */
+#pagediv {
+  width: 100%;
+  background-color: pink;
+  padding: 10px;
+  float: left;
+  clear: both;
+}
+#pagedivcontent {
+  width: 100%;
+  padding: 10px;
+  height: auto;
+}
+
+/* responsive */
+@media only screen and (max-width: 940px) {
+  #c1 {
+    position: absolute;
+    margin-left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+  .hero {
+    height: 300px;
+    background-size: cover;
+  }
 }

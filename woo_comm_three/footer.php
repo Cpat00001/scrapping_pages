@@ -1,6 +1,18 @@
-<h5 class="footer">Footer</h5>
+<footer>
+    <div class="container" style="position:relative;">
+        <div class="row d-flex align-items-center " id="footerrow">
+            <div class="col">
+                <hp>Scandinavian Style Design</hp>
+            </div>
+            <div class="col" style="background:rosybrown;height:100%;">
 
-
+            </div>
+            <div class="col">
+                <p>WooCommerce </p>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <?php wp_footer(); ?>
 <!-- Bootstrap scripts -->
