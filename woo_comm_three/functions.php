@@ -24,5 +24,17 @@ add_theme_support('post-thumbnails');
 // add image size/thumbnails
 add_image_size('custom-size', 1100, 550, false);
 
+// add widget
+function add_menu_widget(){
+    register_sidebar(array(
+        'name' => 'Custom Page Sidebar',
+        'id' => 'custom-page-sidebar',
+        'class' => '',
+        'before_title' => '<h4>',
+        'agter_title' => '</h4>',
+    ));
+}
+add_action('widgets_init','add_menu_widget');
+
 ?>
 

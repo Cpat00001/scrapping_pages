@@ -25,6 +25,8 @@ Theme URI: https://wordpress.org/themes/woo_comm_three/
 li {
   float: left;
   padding: 10px;
+  margin: 0;
+  list-style-type: none;
 }
 a {
   display: block;
@@ -74,7 +76,7 @@ a:hover {
   width: 100%;
 }
 
-/* about us */
+/* page  */
 #pagediv {
   width: 100%;
   background-color: pink;
@@ -86,6 +88,20 @@ a:hover {
   width: 100%;
   padding: 10px;
   height: auto;
+}
+/* page side-widget */
+.mb-3 {
+  width: 1100px;
+  height: 550px;
+}
+.widget_pages {
+  border: 1px solid rgb(110, 100, 100);
+  margin-top: 5px;
+  padding: 10px;
+  box-shadow: 3px 7px rgb(110, 100, 100);
+}
+.sticky-top {
+  top: 50px;
 }
 
 /* responsive */
