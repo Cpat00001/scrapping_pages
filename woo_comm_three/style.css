@@ -86,8 +86,11 @@ a:hover {
 }
 #pagedivcontent {
   width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 10px;
   height: auto;
+  box-shadow: 0px 0px 5px grey;
 }
 /* page side-widget */
 .mb-3 {
@@ -102,6 +105,13 @@ a:hover {
 }
 .sticky-top {
   top: 50px;
+}
+/* posts list - Blog */
+.postslist {
+  border: 1px solid grey;
+  padding: 10px;
+  box-shadow: 0px 0px 50x grey;
+  margin-bottom: 5px;
 }
 
 /* responsive */
