@@ -31,10 +31,18 @@ function add_menu_widget(){
         'id' => 'custom-page-sidebar',
         'class' => '',
         'before_title' => '<h4>',
-        'agter_title' => '</h4>',
+        'after_title' => '</h4>',
     ));
 }
 add_action('widgets_init','add_menu_widget');
+// add blog-sidebar
+    register_sidebar(array(
+        'name'=>'Blog Sidebar',
+        'id' => 'blog-sidebar',
+        'class' => '',
+        'before_title' => '<h4>',
+        'after_title'=>'</h4>',
+    ));
 
 ?>
 

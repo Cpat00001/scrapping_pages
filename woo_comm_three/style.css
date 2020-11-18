@@ -76,7 +76,7 @@ a:hover {
   width: 100%;
 }
 
-/* page  */
+/* single page  */
 #pagediv {
   width: 100%;
   background-color: pink;
@@ -91,6 +91,9 @@ a:hover {
   padding: 10px;
   height: auto;
   box-shadow: 0px 0px 5px grey;
+}
+a {
+  display: inline-block;
 }
 /* page side-widget */
 .mb-3 {
@@ -112,6 +115,13 @@ a:hover {
   padding: 10px;
   box-shadow: 0px 0px 50x grey;
   margin-bottom: 5px;
+}
+/* archives */
+.widget_recent_entries {
+  border: 1px solid rgb(110, 100, 100);
+  margin-top: 5px;
+  padding: 10px;
+  box-shadow: 3px 7px rgb(110, 100, 100);
 }
 
 /* responsive */

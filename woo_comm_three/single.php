@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-lg-3">
             <div class="sticky-top">
-                <?php get_sidebar();?>
+                <?php dynamic_sidebar('blog-sidebar');?>
             </div>
         </div>
         <div class="col-lg-9" id="pagedivcontent">
@@ -30,6 +30,16 @@ else:
 endif;
 
 ?>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            <!-- empty column -->
+        </div> 
+        <div class="col-lg-9">
+                <?php
+                $tagi = '<h4>Tags</h4>';?>
+                <p class="tagi"><?php the_tags($tagi,' '); ?></p>
         </div>
     </div>
 </div>
