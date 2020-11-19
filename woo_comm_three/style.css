@@ -103,6 +103,7 @@ a {
 .widget_pages {
   border: 1px solid rgb(110, 100, 100);
   margin-top: 5px;
+  margin-bottom: 25px;
   padding: 10px;
   box-shadow: 3px 7px rgb(110, 100, 100);
 }
@@ -123,7 +124,11 @@ a {
   padding: 10px;
   box-shadow: 3px 7px rgb(110, 100, 100);
 }
-
+/* checkout page input fields */
+.woocommerce-input-wrapper {
+  width: 100%;
+  display: block;
+}
 /* responsive */
 @media only screen and (max-width: 940px) {
   #c1 {

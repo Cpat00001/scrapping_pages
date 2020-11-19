@@ -43,6 +43,12 @@ add_action('widgets_init','add_menu_widget');
         'before_title' => '<h4>',
         'after_title'=>'</h4>',
     ));
+// add woocommerce
+function mytheme_add_woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
+add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 
 ?>
 

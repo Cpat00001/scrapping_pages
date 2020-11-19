@@ -16,7 +16,9 @@
              <img src="<?php the_post_thumbnail_url('custom-size');?>" alt="<?php the_title();?>" class="img-fluid mb-3 mt-3">
         <?php 
         }else{
-            echo "Sorry No image for that post";
+        ?>
+            <img src="./images/logo.jpg" alt="logo" class="img-fluid mb-3 mt-3">
+        <?php
         }
         ?>
 
